@@ -22,18 +22,18 @@
             <div class="stats shadow">
               <div class="stat">
                 <div class="stat-title">Total ammount</div>
-                <div class="stat-value">89400</div>
+                <div id="current-balance" class="stat-value">89400</div>
               </div>
             </div>
             <div class="divider"></div>
             <!-- action button -->
             <div>
-              <button class="btn btn-lg">Add Money</button>
-              <button class="btn btn-lg">Withdraw</button>
+              <button id="add-money-form" class="btn btn-lg">Add Money</button>
+              <button id="withdraw-form" class="btn btn-lg">Withdraw</button>
             </div>
             <div class="divider"></div>
             <!-- add money form start -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div id="add-money" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label">Ammount</label>
@@ -43,11 +43,33 @@
           <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
 
 
+          
+          </div>
+            
+</div>
             <!-- add money form end -->
+             <!-- cashout start -->
+                       <div id="withdraw"  class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Ammount</label>
+          <input id="cashout-ammount" type="text" class="input" placeholder="Enter your ammount" />
+          <label class="label">Pin</label>
+          <input id="cash-out-pin" type="password" class="input" placeholder="Enter your Pin" />
+          <button id="cash-out-btn" class="btn btn-neutral mt-4">Cash Out</button>
+
+
+          
+          </div>
+            
+</div>
+              <!-- cashout end -->
           </div>
         </div>
       </div>
     </main>
         <script src="js/home.js"></script>
+        <script src="js/cashout.js"></script>
+        <script src="js/features.js"></script>
   </body>
 </html>
